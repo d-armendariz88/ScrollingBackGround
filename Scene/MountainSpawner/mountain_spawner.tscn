@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://donhwowy6dg5u"]
+
+[ext_resource type="Script" path="res://Scene/MountainSpawner/mountain_spawner.gd" id="1_83va2"]
+[ext_resource type="PackedScene" uid="uid://bdpq6o1f6attb" path="res://Scene/MountainObject/mountain.tscn" id="1_n2408"]
+
+[node name="MountainSpawner" type="Node2D"]
+script = ExtResource("1_83va2")
+
+[node name="Mountain1" parent="." instance=ExtResource("1_n2408")]
+
+[node name="Mountain2" parent="." instance=ExtResource("1_n2408")]
+position = Vector2(800, 0)
+
+[node name="Mountain3" parent="." instance=ExtResource("1_n2408")]
+position = Vector2(1600, 0)
+
+[node name="Mountain4" parent="." instance=ExtResource("1_n2408")]
+position = Vector2(2400, 0)
+
+[node name="ErasePoint" type="Marker2D" parent="."]
+position = Vector2(-1000, 0)

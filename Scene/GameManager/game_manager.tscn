@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://pcwk7rua3h82"]
+
+[ext_resource type="PackedScene" uid="uid://donhwowy6dg5u" path="res://Scene/MountainSpawner/mountain_spawner.tscn" id="1_gpsy6"]
+
+[node name="GameManager" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="MountainSpawner" parent="." instance=ExtResource("1_gpsy6")]

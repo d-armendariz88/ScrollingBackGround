@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdpq6o1f6attb"]
+
+[ext_resource type="Script" path="res://Scene/MountainObject/Mountain.gd" id="1_5j53p"]
+[ext_resource type="Texture2D" uid="uid://dxlvg7i7q4lg3" path="res://RawAssets/Sprite/Mountain/scrollingMountain.png" id="2_0ffcb"]
+
+[node name="Mountain" type="Node2D"]
+script = ExtResource("1_5j53p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_0ffcb")
+hframes = 5
+
+[node name="SpawPoint" type="Marker2D" parent="."]
+position = Vector2(800, 0)
